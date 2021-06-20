@@ -1,1 +1,1 @@
-web: gunicorn indiabeatshunger.wsgi --log-file -
+web: gunicorn Hello.wsgi --log-file -
