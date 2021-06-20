@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Register</title>
+</head>
+
+<body>
+
+    <div class="py-5 text-center">
+        <img class="IMG-2" src="/static/img/logo1.jpg" alt="" width="150" height="100">
+        <br>
+        <h2>Register with IBH</h2>
+        <p class="lead"> Contributing towards a better tommorow</p>
+    </div>
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Register </h1>
+            <p class="lead my-3"> IBH is the one stop destination for you to volunteer and reap the twin
+                benefits of
+                making your contribution for a better and healthier India.<br> <br> Working together we
+                will ensure that
+                only
+                hunger is left behind! </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="align-items-center g-lg-5 px-5  ">
+
+            <form class="row g-3 needs-validation p-4 p-md-5 border rounded-3 bg-light"  method="post" action="/regngo">
+            {% csrf_token %}
+                <div class="col-md-3 ">
+                    <input type="Name" class="form-control" name="name" id="floatingPassword" required placeholder="NGO Name">
+                    <label for="floatingPassword">NGO Name</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="Name" class="form-control" name="pocname" id="floatingPassword" required placeholder="POC Name">
+                    <label for="floatingPassword">POC Name</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="email" class="form-control" name="email" id="floatingInput" required placeholder="name@example.com"
+                        required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="Name" class="form-control" name="city" id="floatingPassword" required placeholder="City">
+                    <label for="floatingPassword">City</label>
+                </div>
+                <div class="col-md-3">
+                   <input type="Name" class="form-control" name="state" id="floatingPassword" required placeholder="State">
+                    <label for="floatingPassword">State</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="pincode" id="floatingPassword" required placeholder="Pincode">
+                    <label for="floatingPassword">Pincode</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="address" id="floatingPassword" required placeholder="Address">
+                    <label for="floatingPassword">NGO Address</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="number" id="floatingPassword" required placeholder="Number">
+                    <label for="floatingPassword">POC Contact Number</label>
+                </div>
+                <div class="col-12">
+                    <div class="form-checkform group">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+            <!--footer added-->
+
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                  <div class="col-12 col-md">
+                    <img class="mb-2" src="/static/img/logo1.jpg" alt="" width="50" height="50">
+                    <small class="d-block mb-3 text-muted">© 2017–2021</small>
+                  </div>
+                  <div class="col-6 col-md">
+                    <h5>Who we are</h5>
+                    <ul class="list-unstyled text-small">
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/index">Home</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About us</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/services">Services we provide</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact Us</a></li>
+                      
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <h5>Get involved</h5>
+                    <ul class="list-unstyled text-small">
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/donation">Donate</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/regres">Join the team</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="/signup">Request for food</a></li>
+                      
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <h5>Follow us</h5>
+                    <ul class="list-unstyled text-small">
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Instagram</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">linkedIn</a></li>
+                      <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Twitter</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

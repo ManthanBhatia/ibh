@@ -1,0 +1,22 @@
+#full{
+        margin: auto;
+        background-color: beige;
+}
+
+#middle{
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+.row{
+    text-align: center;
+    border: 3px;
+}
+
+.lead{
+    text-align: center;
+    border: 3px;
+}
+
